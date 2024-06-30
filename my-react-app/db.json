@@ -1,0 +1,7 @@
+{
+    "emails": [
+      { "id": 1, "address": "example1@example.com" },
+      { "id": 2, "address": "example2@example.com" }
+    ]
+  }
+  

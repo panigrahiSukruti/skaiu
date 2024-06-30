@@ -1,0 +1,91 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  width: 25%;
+  height: 100vh;
+  background: #F3E8FF;
+  border-radius: 0 21.2px 21.2px 0;
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  display: flex!important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-links {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.links {
+  padding: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.2s ease-in-out;
+}
+
+.link.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.link span {
+  margin-right: 10px;
+}
+
+.sidebar_bottom {
+  padding: 15px;
+}
+
+.sidebar_bottom .link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-header {
+  padding: 16px;
+  background-color: #6200ea;
+  color: white;
+  text-align: center;
+}
+
+.sidebar-header .MuiTypography-root {
+  margin: 0;
+}

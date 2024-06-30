@@ -1,0 +1,65 @@
+.app {
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  padding: 20px;
+}
+
+.open-modal-button {
+  padding: 10px 20px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.open-modal-button:hover {
+  background-color: #3700b3;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+   background: #FFFFFF;
+
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.app {
+  display: flex;
+}
+
+.form-box {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.form-box .MuiTypography-h5 {
+  margin-bottom: 16px;
+}
+
+.form-box .MuiTextField-root {
+  margin-bottom: 16px;
+}

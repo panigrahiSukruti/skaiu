@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-left a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar-right a {
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  .navbar-right a svg {
+    font-size: 20px;
+  }
+  

@@ -1,0 +1,106 @@
+/* MainContent.css */
+.upload-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.individual-card {
+    display: flex;
+    flex-direction: row;
+    padding: 14px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.podcast {
+    font-size: 12px;
+    text-align: start;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 26.64px;
+    line-height: 33.06px;
+    color: #1D1B20;
+}
+
+.upload-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.upload-button {
+    padding: 10px 20px;
+    background-color: #7E22CE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.status-message {
+    margin-top: 20px;
+    color: #1D1B20;
+}
+
+.try-it-button {
+  background-color: white;
+  font-weight: 700;
+  color: black;
+  padding: 0px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sample-table {
+    margin: 20px 4px; 
+}
+
+.table-header, .table-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    padding: 10px;
+    background-color: #F3E8FF;
+    border-bottom: 1px solid #CAC4D0;
+}
+
+.table-header {
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.table-row {
+    background-color: #FFFFFF;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.delete-button {
+    background-color: white;
+    color: red;
+    border: none;
+    cursor: pointer;
+    padding: 8px 4px;
+}
+
+.edit-button {
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 8px 4px;
+}
+
+.actions button:hover {
+    background-color: #CAC4D0;
+}

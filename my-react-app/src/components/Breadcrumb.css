@@ -1,0 +1,19 @@
+.breadcrumb {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-logo {
+    margin-bottom: 4px;;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+.breadcrumb-text {
+    color: #7E22CE;
+}

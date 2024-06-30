@@ -1,0 +1,59 @@
+/* src/components/TranscriptSection.module.css */
+.wrapper {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .projectName {
+    color: var(--color-primary);
+  }
+  
+  .editButton {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .transcriptionWrapper {
+    margin-top: 20px;
+  }
+  
+  .textArea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .saveButton {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .searchBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
