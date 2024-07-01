@@ -16,6 +16,8 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import useStore from "../store";
 import "../components/Sidebar.module.css";
+import "../components/Logo.css";
+import Logo_main  from "../assets/assets/directright.png"
 
 const Sidebar = () => {
   const isSidebarOpen = useStore((state) => state.isSidebarOpen);
@@ -40,9 +42,14 @@ const Sidebar = () => {
       // }}
     >
       <div className="sidebar-header">
-        <Typography variant="h6" noWrap component="div">
-          <img src="../assets/assets/directright.png" alt="logo" />
-        </Typography>
+        {/* <Typography variant="h6" noWrap component="div"> */}
+         <Link to={"/"}>
+         <img src={Logo_main} alt="logo" />
+         <img src="/Logo/LAMA.png" alt="logo" /></Link>
+
+        {/* </Typography> */}
+
+        {/* TODO: Doing something else :( */}
         <Typography variant="body2" noWrap component="div">
           Sample Project Name
         </Typography>

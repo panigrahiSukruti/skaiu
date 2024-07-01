@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import Header from '../components/Header'; 
 import './styles.css'; 
 import axios from 'axios';
+import {Link} from "react-router-dom";
+
 const Home = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -22,12 +24,13 @@ const Home = () => {
   }
 
   const onSubmit = (data) => {
-const res = axios({
-    method: 'post',
-    url: 'http://localhost:8080/api/v1/projects/create',
-    params:{
-        projectName: data.projectName    }
-});
+    const res = axios({
+      method: 'post',
+      url: 'http://localhost:8080/api/v1/projects/create',
+      params:{
+          projectName: data.projectName    }
+    });
+    // TODO: Add navigate to this function
     closeModal();
   };
   
@@ -89,7 +92,9 @@ const res = axios({
             }}
           >
             Create New Project
+            
           </button>
+          
         </div>
       </div>
 
@@ -99,7 +104,7 @@ const res = axios({
         className="modal"
         overlayClassName="overlay"
       >
-        <Box 
+        <Box
           component="form" 
           onSubmit={handleSubmit(onSubmit)}
         >
@@ -117,9 +122,11 @@ const res = axios({
             <Button variant="text" className="cancel-btn" onClick={closeModal}>
               Cancel
             </Button>
+            <Link to="/projects">
             <Button type="submit" variant="contained" className="create-btn">
               Create
             </Button>
+            </Link>
           </Box>
         </Box>
       </Modal>
